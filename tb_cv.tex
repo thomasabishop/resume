@@ -1,30 +1,21 @@
-%--------------------
-% Packages
-% -------------------
 \documentclass[11pt,a4paper]{article}
+\usepackage{styles} % Imports stylesheet 
 \usepackage[utf8x]{inputenc}
-\usepackage[T1]{fontenc}L
-
-%\usepackage{gentium}
-\usepackage{mathptmx} % Use Times Font
-
-
 \usepackage[pdftex]{graphicx} % Required for including pictures
-\usepackage[swedish]{babel} % Swedish translations
 \usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
 \usepackage{calc} % To reset the counter in the document after title page
 \usepackage{enumitem} % Includes lists
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
 
 \frenchspacing % No double spacing between sentences
-\linespread{1.2} % Set linespace
+
 \usepackage[a4paper, lmargin=0.1666\paperwidth, rmargin=0.1666\paperwidth, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry} %margins
 %\usepackage{parskip}
 
 \usepackage[all]{nowidow} % Tries to remove widows
 \usepackage[protrusion=true,expansion=true]{microtype} % Improves typography, load after fontpackage is selected
-
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
 
 %-----------------------
 % Set pdf information and add title, fill in the fields
@@ -38,15 +29,89 @@ pdfauthor = {}
 %-----------------------
 % Begin document
 %-----------------------
-\begin{document} %All text i dokumentet hamnar mellan dessa taggar, allt ovanför är formatering av dokumentet
+\begin{document} 
+\section*{\LARGE{Thomas Bishop}}
+\subsection*{\Large{Web developer}}
 
-\section{Thomas Bishop}
-\subsection{Web Developer}
-Highly motivated and adaptable web developer, technical consultant and former teacher committed to building clean, efficient and performant websites and e-commerce storefronts.
+Highly motivated independent frontend web developer and technical SEO consultant committed to building clean, efficient and performant websites and storefronts.
+
+\begin{itemize}
+    \item \href{https://www.thomas-bishop.co.uk}{thomas-bishop.co.uk}
+    \item \href{mailto:thomas@thomas-bishop.com}{thomas@thomas-bishop.com}
+    \item  \href{https://www.google.com/maps/place/Peacehaven/@50.7980857,-0.0088727,14z/data=!3m1!4b1!4m5!3m4!1s0x47df7d76d09003cd:0x2d61228cfd5cf235!8m2!3d50.793209!4d-0.005174}{Peacehaven, East Sussex}
+\end{itemize}
+
+\section*{Technical skills}
+\begin{itemize}
+    \item \textbf{Languages:} JavaScript, HTML5, CSS3, LaTeX, Liquid
+    \item \textbf{Build tools:} Git, CLI, (Bash/Zsh), Node.js, Yarn, npm, Gulp, Webpack, SSH, Netlify, Heroku, Lighthouse
+    \item \textbf{Frameworks and libraries}  Material, Bootstrap 4, Bulma, Gatsby.js, Jekyll, Vue.js
+    \item \textbf{Content management systems:} WordPress, Drupal (basic) 
+    \item \textbf{Data:} MySQL, JSON, Cube.js 
+\end{itemize}  
+
+\section*{Experience}
+\subsection*{Freelance client work}
+\subsubsection*{Remote web developer | \href{https://www.clareshort.org}{clareshort.org} | 2016 --- present }
+\begin{itemize}
+    \item Clare Short is the UK's former Secretary of State for International Development.
+    \item Developed, designed and now maintain \href{https://www.clareshort.org}{clareshort.org} as a responsive WordPress.org website.
+    \item In addition to ongoing maintenance and content manangement I provide technical SEO services.
+\end{itemize}
+
+\subsubsection*{Remote web developer | University of Sussex | June---July 2019  }
+\begin{itemize}
+    \item Hired by the University's Digital Humanities Lab to make customisations to the \href{http://makingafricanconnections.org/s/archive/page/index}{Making African Connections Digital Archive}
+    \item Introduced several front-end refinements to make the site responsive and ensure functionality not compromised on 2G African networks.
+    \item Implemented backend processes to assist researchers in showcasing artefacts.
+\end{itemize}
+
+\subsubsection*{Remote web developer | \href{https://www.clareshort.org}{Modish Living} | 2019 --- present }
+\begin{itemize}
+    \item Modish Living is a reclaimed furniture retailer located in Hove, East Sussex. 
+    \item Implemented a redesign of their Shopify site and to introduce several custom features that were lacking in previous iterations of the site, including:
+        \begin{itemize}
+            \item a graphical page builder to allow content managers to easily add content blocks and control layout and placement
+            \item a custom 'mega navigation' that enabled in-menu promotions
+            \item the introduction of a 3D product image rotator
+            \item streamlining the aggregration and compression of high-resolution product-images with a modern pipeline
+        \end{itemize}
+    \item I now maintain the site on a retainer basis   
+\end{itemize}
+
+\subsubsection*{Remote web developer | Colour Me KT | 2019 --- present }
+\begin{itemize}
+    \item Refurbished and upscaled furniture store with Shopify e-commerce site.
+    \item Managed domain migration from Etsy/Facebook to a dedicated Shopify store that integrates the different product lines and selling channels
+    \item Made numerous front end alterations to the site and built new templates for curated blog and product content
+    \item Conducted a detailed technical SEO audit of the site, implementing the recommendations myself
+    \item I now maintain the site on a retainer basis
+\end{itemize}
+
+\subsection*{Salaried work}
+
+\subsubsection*{Technical SEO analyst | \href{https://www.rocketmill.co.uk/}{RocketMill} | 2017-18 }
+\begin{itemize}
+    \item Managed several client accounts as chief SEO manager: Dropbox, \emph{Financial Times}, Kimberley Clark.
+    \item Through regular technical auditing, competitor and link analyses, forecasting and data review I was able to help clients solve technical search issues and drive market performance.
+\end{itemize}
+
+\subsubsection*{SEO analyst | \href{https://obaninternational.com/}{Oban International | 2017} }
+\begin{itemize}
+    \item Joined Oban as a developer with limited SEO experience. Underwent six-month training programme to assimilate the core principles and procedures of SEO, with a specific focus on international markets and technologies.
+    \item Contributed to the SEO management of a range of client accounts including the BBC World Service, Camper, and AXA Healthcare Insurance.
+    \item Learned how search engines and ranking algorithms work outside of the Google sphere, i.e Yandax, Baidu, Naver etc.
+\end{itemize}
+
+\subsection*{Teaching}
     \begin{itemize}
-        \item 
+        \item Qualified as a primary school teacher in 2012. Passed professional induction in 2013.
+        \item Worked as a teacher in a number of schools throughout South London, mainly teaching Years 4 and 5.
     \end{itemize}
+\section*{Education}
+\textbf{Postgraduate Certificate of Education}, Middlesex University (2011---12) \\
+\textbf{B. A Philosophy}, University of Warwick (2006---2009), graduated 2:1
 
-\subsection*{Subtitle}
-\lipsum[4-5]
+
+
 \end{document}
